@@ -1,0 +1,92 @@
+@keyframes content_reveal{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+body,html {
+  margin: 0;
+  padding: 0;
+  
+}
+div.root{
+  animation: content_reveal 0.8s ease;
+}
+
+.App{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+#navbar {
+  z-index: 1;
+}
+
+.post-img {
+  background-image: url('/images/doggrass.jpg') no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+
+.padding {
+  padding: 2%;
+}
+
+.btnColor {
+  background-color: #ee6e73;
+}
+
+.input-field input:focus+label {
+  color: #ee6e73 !important;
+  pointer-events: all;
+}
+
+/* label underline focus color */
+
+.row .input-field input:focus {
+  border-bottom: 1px solid #ee6e73 !important;
+  box-shadow: 0 1px 0 0 #ee6e73 !important
+}
+
+.input-field .prefix.active {
+  color: #ee6e73;
+}
+
+.pinkColor {
+  background-color: #ee6e73;
+}
+
+i.icon-grey {
+  color: grey;
+}
+.nav-wrapper .brand-logo img {
+  height: 67px;
+}
+
+
+
